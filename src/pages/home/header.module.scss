@@ -8,7 +8,9 @@
     @include flexCenter();
     background-color: rgb(21, 8, 32);
     padding: 10px;
-    border-bottom: 1px solid rgba(26, 12, 37, 0.171);
+    border-bottom: 1px solid rgba(243, 228, 255, 0.329);
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
 
     .icons_animes {
         @include flexCenter();
@@ -30,10 +32,9 @@
 .header {
     @include flexCenter();
     padding: 6px;
-    border-bottom: 1px solid rgba(26, 12, 37, 0.356);
 
     .icons_animes {
-        gap: 4%;
+        gap: 6%;
         li {
             img {
                 width: 55px;
