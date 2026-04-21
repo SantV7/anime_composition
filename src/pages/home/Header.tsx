@@ -1,6 +1,6 @@
 import styles from '../home/header.module.scss'
 
-const Header = () => {
+const Header = ({}) => {
 
   const iconsAnime = [
     {id: 1, img: ''},
