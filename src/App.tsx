@@ -21,7 +21,9 @@ function App() {
   return (
     <>
     <Header iDS={icons.ds} iAOT={icons.aot} iCM={icons.cm} iTG={icons.tg} iJJK={icons.jjk}/>
- 
+    <div id='area_enter'>
+      <button id='btn_enter'>ENTRAR</button>
+    </div>
     </>
   )
 }
