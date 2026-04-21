@@ -6,6 +6,7 @@ import iconCM from './assets/img/chainsaw_man_icon.png'
 import iconTG from './assets/img/tg.png'
 import iconJJK from './assets/img/jjk.png'
 import { useState } from 'react'
+import AnimeExhibition from './pages/scenario/AnimeExhibition'
 
 
 function App() {
@@ -19,16 +20,20 @@ function App() {
   }; 
 
   const [enterPage, setEnterPage] = useState<boolean>(false)
+
+  if(enterPage) {
+    return <AnimeExhibition />
+  }
  
 
   return (
     <>
     <Header iDS={icons.ds} iAOT={icons.aot} iCM={icons.cm} iTG={icons.tg} iJJK={icons.jjk}/>
+
     <div id='area_enter'>
-      <button onClick={() => setEnterPage(true)} id='btn_enter'>ENTRAR</button>
+      <button onClick={() => setEnterPage(!enterPage)} id='btn_enter'>ENTRAR</button>
     </div>
 
-    
     </>
   )
 }
