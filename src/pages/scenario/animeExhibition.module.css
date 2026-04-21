@@ -2,6 +2,8 @@
   height: 100vh;
   width: 100%;
   background-color: rgb(42, 40, 54);
+  display: flex;
+  flex-direction: column;
 }
 
 .home_page_return {
@@ -14,6 +16,23 @@
 }
 .home_page_return .home_icon:hover {
   scale: 1.06;
+}
+
+.slider_img {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  position: relative;
+}
+.slider_img .track {
+  display: flex;
+  gap: 40px;
+  flex-flow: row nowrap;
+  will-change: transform;
 }
 
 @media screen and (max-width: 768px) {
