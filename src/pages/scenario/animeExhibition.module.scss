@@ -3,3 +3,18 @@
     width: 100%;
     background-color: rgb(42, 40, 54);
 }
+
+.home_page_return {
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    transition: ease 0.3s;
+    .home_icon {
+        &:hover {
+            scale: 1.1;
+        }
+    }
+    
+}
