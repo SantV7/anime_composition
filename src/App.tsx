@@ -22,8 +22,10 @@ function App() {
   const [enterPage, setEnterPage] = useState<boolean>(false)
 
   if(enterPage) {
-    return <AnimeExhibition />
+    return <AnimeExhibition onBack={() => setEnterPage(false)} />
   }
+
+
  
 
   return (
