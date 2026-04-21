@@ -6,17 +6,42 @@
 
 .header {
     @include flexCenter();
+    background-color: rgba(21, 8, 32, 0.932);
     padding: 10px;
     border-bottom: 1px solid rgba(26, 12, 37, 0.171);
 
     .icons_animes {
         @include flexCenter();
-        gap: 10%;
+        gap: 34%;
         flex-flow: row nowrap;
 
         li {
             list-style: none;
+
+            img {
+                width: 70px;
+                height: auto;
+            }
         }
     }
+}
+
+@media screen and (max-width: 768px) {
+.header {
+    @include flexCenter();
+    padding: 6px;
+    border-bottom: 1px solid rgba(26, 12, 37, 0.356);
+
+    .icons_animes {
+        gap: 15%;
+        li {
+            img {
+                width: 55px;
+                height: auto;
+            }
+        }
+    }
+}
+   
 }
 

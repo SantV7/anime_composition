@@ -14,14 +14,14 @@ function App() {
     aot: iconAOT,
     cm: iconCM,
     tg: iconTG,
-    jk: iconJJK
+    jjk: iconJJK
   }; 
  
 
   return (
     <>
-    <Header iDS={icons.ds} iAOT={icons.aot} iCM={icons.cm} iTG={icons.tg} iJJK={icons.jk}/>
-     
+    <Header iDS={icons.ds} iAOT={icons.aot} iCM={icons.cm} iTG={icons.tg} iJJK={icons.jjk}/>
+     <h1>teste</h1>
     </>
   )
 }

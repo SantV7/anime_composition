@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: rgba(21, 8, 32, 0.932);
   padding: 10px;
   border-bottom: 1px solid rgba(26, 12, 37, 0.171);
 }
@@ -9,9 +10,30 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10%;
+  gap: 34%;
   flex-flow: row nowrap;
 }
 .header .icons_animes li {
   list-style: none;
+}
+.header .icons_animes li img {
+  width: 70px;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    border-bottom: 1px solid rgba(26, 12, 37, 0.356);
+  }
+  .header .icons_animes {
+    gap: 15%;
+  }
+  .header .icons_animes li img {
+    width: 55px;
+    height: auto;
+  }
 }/*# sourceMappingURL=header.module.css.map */

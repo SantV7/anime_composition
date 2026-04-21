@@ -7,7 +7,7 @@ import styles from '../home/header.module.scss'
     iTG: string;
     iJJK: string;
   }
-  
+
 const Header = ({iDS, iAOT, iCM, iTG, iJJK}: HeaderProps) => {
 
 
@@ -23,7 +23,7 @@ const Header = ({iDS, iAOT, iCM, iTG, iJJK}: HeaderProps) => {
   return (
     <>
     <header className={styles.header}>
-      <ul className={styles.icons_anime}>
+      <ul className={styles.icons_animes}>
         {iconsAnime.map((iconImg) => (
           <li key={iconImg.id}><img src={iconImg.img}/></li>
         ))}
