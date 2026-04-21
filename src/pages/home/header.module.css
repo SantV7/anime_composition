@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(21, 8, 32, 0.932);
+  background-color: rgb(21, 8, 32);
   padding: 10px;
   border-bottom: 1px solid rgba(26, 12, 37, 0.171);
 }
@@ -30,7 +30,7 @@
     border-bottom: 1px solid rgba(26, 12, 37, 0.356);
   }
   .header .icons_animes {
-    gap: 15%;
+    gap: 4%;
   }
   .header .icons_animes li img {
     width: 55px;
