@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-bottom: 1px solid rgba(26, 12, 37, 0.171);
+}
+
+.icons_animes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+  flex-flow: row nowrap;
+}/*# sourceMappingURL=header.module.css.map */
