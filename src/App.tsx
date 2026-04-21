@@ -21,7 +21,7 @@ function App() {
   return (
     <>
     <Header iDS={icons.ds} iAOT={icons.aot} iCM={icons.cm} iTG={icons.tg} iJJK={icons.jjk}/>
-     <h1>teste</h1>
+ 
     </>
   )
 }
