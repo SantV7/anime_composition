@@ -13,8 +13,14 @@
     transition: ease 0.3s;
     .home_icon {
         &:hover {
-            scale: 1.1;
+            scale: 1.06;
         }
     }
-    
+}
+
+
+@media screen and (max-width: 768px) {
+    .home_page_return {
+        justify-content: start;
+    }
 }

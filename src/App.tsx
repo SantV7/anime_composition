@@ -17,14 +17,13 @@ function App() {
     cm: iconCM,
     tg: iconTG,
     jjk: iconJJK
-  }; 
+  }
 
   const [enterPage, setEnterPage] = useState<boolean>(false)
 
   if(enterPage) {
     return <AnimeExhibition onBack={() => setEnterPage(false)} />
   }
-
 
  
 

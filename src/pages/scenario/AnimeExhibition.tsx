@@ -2,18 +2,15 @@ import { useEffect, useRef } from 'react';
 import styles from '../scenario/animeExhibition.module.scss'
 import { AiFillHome } from "react-icons/ai";
 import gsap from 'gsap';
-
+import Cards from './Cards';
 
    interface Props {
-    onBack: () => void
+     onBack: () => void
    }
-
 
 const AnimeExhibition = ({onBack}: Props) => {
 
 const mainHome = useRef<HTMLElement>(null)
-
-
 
 useEffect(() => {
   if(mainHome.current) {
@@ -25,12 +22,17 @@ useEffect(() => {
 
 
 
-
   return (
     <>
     <main ref={mainHome} className={styles.anime_main}>
       <header className={styles.home_page_return}><AiFillHome 
        className={styles.home_icon} onClick={onBack} color='white' size={45}/></header>
+
+       <section>
+        <Cards />
+        <Cards />
+        <Cards />
+       </section>
     </main>
     </>
   )
