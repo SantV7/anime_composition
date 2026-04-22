@@ -56,6 +56,20 @@ const AnimeExhibition = ({ onBack }: Props) => {
     }
   }, []);
 
+  const imgSliderList = [
+    denji,
+    gojo_c,
+    touka,
+    eren,
+    demonSlayer,
+    friren_j,
+    gojo_s,
+    raze,
+    kaneki,
+    frieren_s,
+    att_flower
+  ]
+
   
 
   return (
@@ -71,12 +85,10 @@ const AnimeExhibition = ({ onBack }: Props) => {
 
       <section className={styles.slider_img}>
         <div className={styles.track} ref={sliderRef}>
-          <Cards />
-          <Cards />
-          <Cards />
-          <Cards />
-          <Cards />
-          <Cards />
+          {imgSliderList.map((imgItem) => (
+            <Cards imgI={imgItem}/>
+          ))}
+       
         </div>
       </section>
     </main>
