@@ -1,3 +1,5 @@
+import styles from './cards.module.scss'
+
 interface CardProps {
   imgI: string
 }
@@ -6,9 +8,8 @@ interface CardProps {
 const Cards = ({imgI}: CardProps) => {
   return (
     <>
-    <div>
+    <div className={styles.area_img}>
         <img src={imgI} alt="card de anime" />
-
     </div>
     </>
   )

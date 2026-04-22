@@ -46,7 +46,7 @@ const AnimeExhibition = ({ onBack }: Props) => {
       
       gsap.to(sliderRef.current, {
         x: `-${scrollWidth / 2}`,
-        duration: 15,
+        duration: 6,
         ease: "none",
         repeat: -1,
         modifiers: {
