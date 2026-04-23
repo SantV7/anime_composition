@@ -35,6 +35,8 @@ function App() {
       <button onClick={() => setEnterPage(!enterPage)} id='btn_enter'>ENTRAR</button>
     </div>
 
+
+
     </>
   )
 }

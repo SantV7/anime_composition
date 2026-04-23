@@ -93,6 +93,16 @@ const AnimeExhibition = ({ onBack }: Props) => {
           {imgSliderList.map((img, i) => <Cards key={`b-${i}`} imgI={img}/>)}
         </div>
       </section>
+
+
+    <section id='info_characters'>
+      <div>
+        <h1>Frieren - Frieren</h1>
+        <article>
+          <h3>Maga/Elfa</h3>
+        </article>
+      </div>
+    </section>
     </main>
   );
 };
