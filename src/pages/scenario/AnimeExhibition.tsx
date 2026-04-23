@@ -44,7 +44,7 @@ const AnimeExhibition = ({ onBack }: Props) => {
         if (halfWidth > 0) {
           gsap.to(sliderRef.current, {
             x: -halfWidth,
-            duration: 30,
+            duration: 40,
             ease: "none",
             repeat: -1,
             force3D: true,
@@ -94,13 +94,50 @@ const AnimeExhibition = ({ onBack }: Props) => {
         </div>
       </section>
 
-      <section id='info_characters'>
+      <section className={styles.info_characters}>
         <div>
           <h1>Frieren - Frieren</h1>
           <article>
             <h3>Maga/Elfa</h3>
           </article>
         </div>
+
+
+        <div>
+          <h1>Frieren - Frieren</h1>
+          <article>
+            <h3>Maga/Elfa</h3>
+          </article>
+        </div>
+
+
+        <div>
+          <h1>Gojo - Jujutsu Kaisen</h1>
+          <article>
+            <h3>Feiticeiro</h3>
+          </article>
+        </div>
+
+
+        <div>
+          <h1>Kaneki - Tokyo Ghoul</h1>
+          <article>
+            <h3>Ghoul/Humano</h3>
+          </article>
+        </div>
+
+
+        <div>
+          <h1>Frieren - Frieren</h1>
+          <article>
+            <h3>Maga/Elfa</h3>
+          </article>
+        </div>
+
+
+
+
+
       </section>
     </main>
   );
