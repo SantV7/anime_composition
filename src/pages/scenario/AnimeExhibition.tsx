@@ -46,7 +46,7 @@ const AnimeExhibition = ({ onBack }: Props) => {
       
       gsap.to(sliderRef.current, {
         x: `-${scrollWidth / 2}`,
-        duration: 6,
+        duration: 17,
         ease: "none",
         repeat: -1,
         modifiers: {
@@ -55,6 +55,8 @@ const AnimeExhibition = ({ onBack }: Props) => {
       });
     }
   }, []);
+
+  
 
   const imgSliderList = [
     denji,
@@ -88,7 +90,6 @@ const AnimeExhibition = ({ onBack }: Props) => {
           {imgSliderList.map((imgItem) => (
             <Cards imgI={imgItem}/>
           ))}
-       
         </div>
       </section>
     </main>

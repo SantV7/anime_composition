@@ -9,7 +9,7 @@ const Cards = ({imgI}: CardProps) => {
   return (
     <>
     <div className={styles.area_img}>
-        <img src={imgI} alt="card de anime" />
+        <img className={styles.img_style} src={imgI} alt="card de anime" />
     </div>
     </>
   )
