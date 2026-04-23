@@ -42,7 +42,6 @@ const AnimeExhibition = ({ onBack }: Props) => {
         const halfWidth = scrollWidth / 2;
 
         if (halfWidth > 0) {
-          gsap.set(sliderRef.current, { x: 0 });
           gsap.to(sliderRef.current, {
             x: -halfWidth,
             duration: 30,
@@ -59,14 +58,15 @@ const AnimeExhibition = ({ onBack }: Props) => {
       const images = sliderRef.current?.querySelectorAll('img');
       if (images) {
         let loaded = 0;
+        const totalImages = images.length;
         images.forEach(img => {
           if (img.complete) {
             loaded++;
-            if (loaded === images.length) setupAnimation();
+            if (loaded === totalImages) setupAnimation();
           } else {
             img.onload = () => {
               loaded++;
-              if (loaded === images.length) setupAnimation();
+              if (loaded === totalImages) setupAnimation();
             };
           }
         });
@@ -94,15 +94,14 @@ const AnimeExhibition = ({ onBack }: Props) => {
         </div>
       </section>
 
-
-    <section id='info_characters'>
-      <div>
-        <h1>Frieren - Frieren</h1>
-        <article>
-          <h3>Maga/Elfa</h3>
-        </article>
-      </div>
-    </section>
+      <section id='info_characters'>
+        <div>
+          <h1>Frieren - Frieren</h1>
+          <article>
+            <h3>Maga/Elfa</h3>
+          </article>
+        </div>
+      </section>
     </main>
   );
 };
