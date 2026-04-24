@@ -95,7 +95,7 @@ const AnimeExhibition = ({ onBack }: Props) => {
       </section>
 
       <section className={styles.info_characters}>
-        <div>
+        <div className={styles.content_character}>
           <h1>Frieren - Frieren</h1>
           <article>
             <h3>Maga/Elfa</h3>
@@ -103,7 +103,7 @@ const AnimeExhibition = ({ onBack }: Props) => {
         </div>
 
 
-        <div>
+        <div className={styles.content_character}>
           <h1>Frieren - Frieren</h1>
           <article>
             <h3>Maga/Elfa</h3>
@@ -111,7 +111,7 @@ const AnimeExhibition = ({ onBack }: Props) => {
         </div>
 
 
-        <div>
+        <div className={styles.content_character}>
           <h1>Gojo - Jujutsu Kaisen</h1>
           <article>
             <h3>Feiticeiro</h3>
@@ -119,7 +119,7 @@ const AnimeExhibition = ({ onBack }: Props) => {
         </div>
 
 
-        <div>
+        <div className={styles.content_character}>
           <h1>Kaneki - Tokyo Ghoul</h1>
           <article>
             <h3>Ghoul/Humano</h3>
@@ -127,7 +127,7 @@ const AnimeExhibition = ({ onBack }: Props) => {
         </div>
 
 
-        <div>
+        <div className={styles.content_character}>
           <h1>Frieren - Frieren</h1>
           <article>
             <h3>Maga/Elfa</h3>
