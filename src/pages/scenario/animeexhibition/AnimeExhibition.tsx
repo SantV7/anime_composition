@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import styles from '../animeexhibition/animeExhibition.module.scss'
 import { AiFillHome } from "react-icons/ai";
 import gsap from 'gsap';
-import Cards from '../Cards';
+import Cards from '../cards/Cards';
 
 
 import denji from '../../../assets/img/slider_img/denji.jpg'
@@ -84,12 +84,7 @@ const AnimeExhibition = ({ onBack }: Props) => {
   return (
     <main ref={mainHome} className={styles.anime_main}>
       <header className={styles.home_page_return}>
-        <AiFillHome 
-          className={styles.home_icon} 
-          onClick={onBack} 
-          color='white' 
-          size={45}
-        />
+        <AiFillHome className={styles.home_icon} onClick={onBack} color='white' size={45} />
       </header>
 
       <section className={styles.slider_img}>

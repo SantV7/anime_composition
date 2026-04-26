@@ -18,7 +18,7 @@
 
     .home_icon {
         &:hover {
-            scale: 1.06;
+            scale: 1.045;
         }
     }
 }
@@ -32,6 +32,7 @@
     align-items: center;
     white-space: nowrap;
     position: relative;
+    margin-bottom: 100px;
 
     .track {
         display: flex;
@@ -51,11 +52,11 @@
 .info_characters {
     margin: auto;
     border-radius: 4px;
-    width: 80%;
+    width: 100%;
+    margin-top: 140px;
     padding: 10px;
     display: flex; 
     flex-flow: row wrap;
-
     gap: 60px;
     justify-content: center;
     align-items: center;
@@ -72,11 +73,9 @@
         text-align: center;
         border: 1px solid rgba(156, 136, 235, 0.397);
         min-height: 250px;
+        width: 45%;
     }
 }
-
-
-
 
 
 
@@ -91,4 +90,8 @@
     .info_characters {
         flex-flow: column nowrap;
     }
+
+    .content_character {
+        width: 97%;
+    }    
 }
