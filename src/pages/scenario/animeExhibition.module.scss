@@ -63,6 +63,15 @@
 
 
     .content_character {
+        min-width: 93%;
+        background-color: rgb(40, 28, 43);
+        padding: 10px 23px;
+        color: white;
+        border-radius: 10px;
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 25px;
+        text-align: center;
         border: 1px solid rgb(226, 219, 255);
     }
 }
