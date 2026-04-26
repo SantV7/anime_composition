@@ -1,24 +1,28 @@
 import { useEffect, useRef } from 'react';
-import styles from '../scenario/animeExhibition.module.scss';
+import styles from '../animeexhibition/animeExhibition.module.scss'
 import { AiFillHome } from "react-icons/ai";
 import gsap from 'gsap';
-import Cards from './Cards';
+import Cards from '../Cards';
 
-import denji from '../../assets/img/slider_img/denji.jpg'
-import gojo_c from '../../assets/img/slider_img/gojo-c.jpg'
-import touka from '../../assets/img/slider_img/touka.jpg'
-import eren from '../../assets/img/slider_img/eren.jpg'
-import demonSlayer from '../../assets/img/slider_img/ds-reflex.jpg'
-import friren_j from '../../assets/img/slider_img/frieren-jumping.jpg'
-import gojo_s from '../../assets/img/slider_img/gojo-s.jpg'
-import raze from '../../assets/img/slider_img/raze.jpg'
-import kaneki from '../../assets/img/slider_img/Kanenki-ken.jpg'
-import frieren_s from '../../assets/img/slider_img/frieren-s.jpg'
-import att_flower from '../../assets/img/slider_img/att.jpg'
+
+import denji from '../../../assets/img/slider_img/denji.jpg'
+import gojo_c from '../../../assets/img/slider_img/gojo-c.jpg'
+import touka from '../../../assets/img/slider_img/touka.jpg'
+import eren from '../../../assets/img/slider_img/eren.jpg'
+import demonSlayer from '../../../assets/img/slider_img/ds-reflex.jpg'
+import friren_j from '../../../assets/img/slider_img/frieren-jumping.jpg'
+import gojo_s from '../../../assets/img/slider_img/gojo-s.jpg'
+import raze from '../../../assets/img/slider_img/raze.jpg'
+import kaneki from '../../../assets/img/slider_img/Kanenki-ken.jpg'
+import frieren_s from '../../../assets/img/slider_img/frieren-s.jpg'
+import att_flower from '../../../assets/img/slider_img/att.jpg'
+
+
 
 interface Props {
   onBack: () => void;
 }
+
 
 const AnimeExhibition = ({ onBack }: Props) => {
   const mainHome = useRef<HTMLElement>(null);
@@ -134,12 +138,10 @@ const AnimeExhibition = ({ onBack }: Props) => {
             <h3>Maga/Elfa</h3>
           </article>
         </div>
-
-
-
-
-
       </section>
+
+
+
     </main>
   );
 };

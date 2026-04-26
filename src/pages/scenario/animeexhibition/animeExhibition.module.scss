@@ -53,17 +53,15 @@
     border-radius: 4px;
     width: 80%;
     padding: 10px;
-    background-color: rgb(64, 64, 83);
     display: flex; 
     flex-flow: row wrap;
-    box-shadow: 0px 0px 11px  rgba(137, 137, 228, 0.582);
+
     gap: 60px;
     justify-content: center;
     align-items: center;
 
 
     .content_character {
-        min-width: 93%;
         background-color: rgb(40, 28, 43);
         padding: 10px 23px;
         color: white;
@@ -72,7 +70,8 @@
         flex-flow: column nowrap;
         gap: 25px;
         text-align: center;
-        border: 1px solid rgb(226, 219, 255);
+        border: 1px solid rgba(156, 136, 235, 0.397);
+        min-height: 250px;
     }
 }
 

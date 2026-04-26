@@ -6,7 +6,7 @@ import iconCM from './assets/img/chainsaw_man_icon.png'
 import iconTG from './assets/img/tg.png'
 import iconJJK from './assets/img/jjk.png'
 import { useState } from 'react'
-import AnimeExhibition from './pages/scenario/AnimeExhibition'
+import AnimeExhibition from './pages/scenario/animeexhibition/AnimeExhibition'
 
 
 function App() {
