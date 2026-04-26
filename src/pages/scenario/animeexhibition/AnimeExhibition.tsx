@@ -4,7 +4,6 @@ import { AiFillHome } from "react-icons/ai";
 import gsap from 'gsap';
 import Cards from '../cards/Cards';
 
-
 import denji from '../../../assets/img/slider_img/denji.jpg'
 import gojo_c from '../../../assets/img/slider_img/gojo-c.jpg'
 import touka from '../../../assets/img/slider_img/touka.jpg'
@@ -17,12 +16,9 @@ import kaneki from '../../../assets/img/slider_img/Kanenki-ken.jpg'
 import frieren_s from '../../../assets/img/slider_img/frieren-s.jpg'
 import att_flower from '../../../assets/img/slider_img/att.jpg'
 
-
-
 interface Props {
   onBack: () => void;
 }
-
 
 const AnimeExhibition = ({ onBack }: Props) => {
   const mainHome = useRef<HTMLElement>(null);
@@ -38,8 +34,6 @@ const AnimeExhibition = ({ onBack }: Props) => {
       if (mainHome.current) {
         gsap.fromTo(mainHome.current, { opacity: 0 }, { opacity: 1, duration: 0.5 })
       }
-
-
 
       const setupAnimation = () => {
         if (!sliderRef.current) return
@@ -96,47 +90,45 @@ const AnimeExhibition = ({ onBack }: Props) => {
 
       <section className={styles.info_characters}>
         <div className={styles.content_character}>
-          <h1>Frieren - Frieren</h1>
+          <h1>Frieren</h1>
           <article>
-            <h3>Maga/Elfa</h3>
+            <h3>Maga / Elfa</h3>
+            <p>Uma maga elfa que fez parte do grupo de heróis que derrotou o Rei Demônio. Como elfa, ela vive milênios, o que a faz perceber o tempo de forma diferente dos humanos, buscando agora entender melhor os sentimentos mortais.</p>
           </article>
         </div>
 
-
         <div className={styles.content_character}>
-          <h1>Frieren - Frieren</h1>
+          <h1>Denji</h1>
           <article>
-            <h3>Maga/Elfa</h3>
+            <h3>Híbrido / Caçador</h3>
+            <p>Um jovem pobre que se funde com seu cão-demônio, Pochita, tornando-se o Chainsaw Man. Ele luta contra demônios na esperança de viver uma vida normal e realizar seus desejos mais simples.</p>
           </article>
         </div>
 
-
         <div className={styles.content_character}>
-          <h1>Gojo - Jujutsu Kaisen</h1>
+          <h1>Satoru Gojo</h1>
           <article>
-            <h3>Feiticeiro</h3>
+            <h3>Feiticeiro Jujutsu</h3>
+            <p>Conhecido como o feiticeiro mais forte do mundo. Portador do Ilimitado e dos Seis Olhos, Gojo é uma figura carismática e arrogante que atua como mentor na Escola de Jujutsu de Tóquio.</p>
           </article>
         </div>
 
-
         <div className={styles.content_character}>
-          <h1>Kaneki - Tokyo Ghoul</h1>
+          <h1>Ken Kaneki</h1>
           <article>
-            <h3>Ghoul/Humano</h3>
+            <h3>Meio-Ghoul</h3>
+            <p>Um estudante universitário que, após um acidente, recebe órgãos de um Ghoul. Ele deve aprender a sobreviver em um mundo onde precisa consumir carne humana, enquanto tenta manter sua humanidade.</p>
           </article>
         </div>
 
-
         <div className={styles.content_character}>
-          <h1>Frieren - Frieren</h1>
+          <h1>Eren Yeager</h1>
           <article>
-            <h3>Maga/Elfa</h3>
+            <h3>Portador de Titã</h3>
+            <p>Um jovem movido pelo desejo de vingança contra os Titãs que destruíram sua casa. Ao descobrir que possui o poder de se transformar em um, ele se torna a última esperança (ou ameaça) da humanidade.</p>
           </article>
         </div>
       </section>
-
-
-
     </main>
   );
 };
