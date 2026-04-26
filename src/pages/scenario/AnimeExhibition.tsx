@@ -32,14 +32,15 @@ const AnimeExhibition = ({ onBack }: Props) => {
   useEffect(() => {
     const ctx = gsap.context(() => {
       if (mainHome.current) {
-        gsap.fromTo(mainHome.current, { opacity: 0 }, { opacity: 1, duration: 0.5 });
+        gsap.fromTo(mainHome.current, { opacity: 0 }, { opacity: 1, duration: 0.5 })
       }
 
+
+
       const setupAnimation = () => {
-        if (!sliderRef.current) return;
-        
+        if (!sliderRef.current) return
         const scrollWidth = sliderRef.current.scrollWidth;
-        const halfWidth = scrollWidth / 2;
+        const halfWidth = scrollWidth / 2
 
         if (halfWidth > 0) {
           gsap.to(sliderRef.current, {
@@ -51,9 +52,9 @@ const AnimeExhibition = ({ onBack }: Props) => {
             modifiers: {
               x: gsap.utils.unitize(x => parseFloat(x) % halfWidth)
             }
-          });
+          })
         }
-      };
+      }
 
       const images = sliderRef.current?.querySelectorAll('img');
       if (images) {
@@ -61,11 +62,11 @@ const AnimeExhibition = ({ onBack }: Props) => {
         const totalImages = images.length;
         images.forEach(img => {
           if (img.complete) {
-            loaded++;
+            loaded++
             if (loaded === totalImages) setupAnimation();
           } else {
             img.onload = () => {
-              loaded++;
+              loaded++
               if (loaded === totalImages) setupAnimation();
             };
           }

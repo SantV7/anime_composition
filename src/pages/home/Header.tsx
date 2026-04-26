@@ -10,7 +10,6 @@ import styles from '../home/header.module.scss'
 
 const Header = ({iDS, iAOT, iCM, iTG, iJJK}: HeaderProps) => {
 
-
   const iconsAnime = [
     {id: 1, img: iDS},
     {id: 2, img: iAOT},
@@ -27,7 +26,6 @@ const Header = ({iDS, iAOT, iCM, iTG, iJJK}: HeaderProps) => {
         {iconsAnime.map((iconImg) => (
           <li key={iconImg.id}><img src={iconImg.img}/></li>
         ))}
-
       </ul>
     </header>
 
