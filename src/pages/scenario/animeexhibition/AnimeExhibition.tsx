@@ -12,7 +12,7 @@ import demonSlayer from '../../../assets/img/slider_img/ds-reflex.jpg'
 import friren_j from '../../../assets/img/slider_img/frieren-jumping.jpg'
 import gojo_s from '../../../assets/img/slider_img/gojo-s.jpg'
 import raze from '../../../assets/img/slider_img/raze.jpg'
-import kaneki from '../../../assets/img/slider_img/Kanenki-ken.jpg'
+import kaneki from '../../../assets/img/slider_img/kanenki-ken.jpg'
 import frieren_s from '../../../assets/img/slider_img/frieren-s.jpg'
 import att_flower from '../../../assets/img/slider_img/att.jpg'
 
