@@ -23,6 +23,7 @@ interface Props {
 const AnimeExhibition = ({ onBack }: Props) => {
   const mainHome = useRef<HTMLElement>(null);
   const sliderRef = useRef<HTMLDivElement>(null);
+  const cardsContainerRef = useRef<HTMLDivElement>(null);
 
   const imgSliderList = [
     denji, gojo_c, touka, eren, demonSlayer,
@@ -33,6 +34,17 @@ const AnimeExhibition = ({ onBack }: Props) => {
     const ctx = gsap.context(() => {
       if (mainHome.current) {
         gsap.fromTo(mainHome.current, { opacity: 0 }, { opacity: 1, duration: 0.5 })
+      }
+
+      if (cardsContainerRef.current) {
+        gsap.from(cardsContainerRef.current.children, {
+          y: 50,
+          opacity: 0,
+          duration: 0.8,
+          stagger: 0.2,
+          ease: "power2.out",
+          delay: 0.3
+        });
       }
 
       const setupAnimation = () => {
@@ -57,15 +69,14 @@ const AnimeExhibition = ({ onBack }: Props) => {
       const images = sliderRef.current?.querySelectorAll('img');
       if (images) {
         let loaded = 0;
-        const totalImages = images.length;
         images.forEach(img => {
           if (img.complete) {
             loaded++
-            if (loaded === totalImages) setupAnimation();
+            if (loaded === images.length) setupAnimation();
           } else {
             img.onload = () => {
               loaded++
-              if (loaded === totalImages) setupAnimation();
+              if (loaded === images.length) setupAnimation();
             };
           }
         });
@@ -88,7 +99,7 @@ const AnimeExhibition = ({ onBack }: Props) => {
         </div>
       </section>
 
-      <section className={styles.info_characters}>
+      <section className={styles.info_characters} ref={cardsContainerRef}>
         <div className={styles.content_character}>
           <h1>Frieren</h1>
           <article>
