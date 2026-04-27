@@ -11,6 +11,8 @@ import AnimeExhibition from './pages/scenario/animeexhibition/AnimeExhibition'
 
 function App() {
 
+ 
+
   const icons = {
     ds: iconDS,
     aot: iconAOT,
