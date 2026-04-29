@@ -15,6 +15,7 @@ import raze from '../../../assets/img/slider_img/raze.jpg'
 import kaneki from '../../../assets/img/slider_img/kanenki-ken.jpg'
 import frieren_s from '../../../assets/img/slider_img/frieren-s.jpg'
 import att_flower from '../../../assets/img/slider_img/att.jpg'
+import VideoCharactere from '../../videosLink/VideoCharactere';
 
 interface Props {
   onBack: () => void;
@@ -103,7 +104,7 @@ const AnimeExhibition = ({ onBack }: Props) => {
         <div className={styles.content_character}>
           <h1>Frieren</h1>
           <article>
-            <h3>Maga / Elfa</h3>
+            <h3>Maga | Elfa</h3>
             <p>Uma maga elfa que fez parte do grupo de heróis que derrotou o Rei Demônio. Como elfa, ela vive milênios, o que a faz perceber o tempo de forma diferente dos humanos, buscando agora entender melhor os sentimentos mortais.</p>
           </article>
         </div>
@@ -111,7 +112,7 @@ const AnimeExhibition = ({ onBack }: Props) => {
         <div className={styles.content_character}>
           <h1>Denji</h1>
           <article>
-            <h3>Híbrido / Caçador</h3>
+            <h3>Híbrido | Caçador</h3>
             <p>Um jovem pobre que se funde com seu cão-demônio, Pochita, tornando-se o Chainsaw Man. Ele luta contra demônios na esperança de viver uma vida normal e realizar seus desejos mais simples.</p>
           </article>
         </div>
@@ -140,6 +141,8 @@ const AnimeExhibition = ({ onBack }: Props) => {
           </article>
         </div>
       </section>
+
+      <VideoCharactere />
     </main>
   );
 };
